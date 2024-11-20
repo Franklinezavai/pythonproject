@@ -36,6 +36,7 @@
         - 1.enter powershell terminall as an administrator{Get-ExecutionPolicy}
         _  if your policy is Restricted, Enter
         {Set-ExecutionPolicy RemoteSigned} to change policy to RemoteSIgned.
+        then procced to activate.
 
 ### install flask
 - After activating virtualenvironment {pip install flask}
