@@ -1,7 +1,7 @@
 # FLASK INTRODUCTION
 - flask is a light weight framework that supports building of web applications.It uses python.
 
-- - The following are requrements to before you start
+- - The following are requrements before you start
 
 ### Python
  - ensure you have python 
