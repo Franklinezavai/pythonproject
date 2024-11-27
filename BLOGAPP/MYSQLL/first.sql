@@ -1,37 +1,37 @@
 CREATE TABLE user(
-userID INT identity(1,1) PRIMARY KEY ,
-userName VARCHAR(255) NOT NULL,
-userEmail VARCHAR(255) NOT NULL,
+userid INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(255) NOT NULL,
+useremail VARCHAR(255) NOT NULL,
 age INT CHECK(age > 14) NOT NULL,
-pasword INT NOT NULL,
-createdate DEFAULT CURRENT_TIMESTAMP
+password INT NOT NULL,
+createdate DATETIME DEFAULT CURRENT_TIMESTAMP
 ); 
 
 CREATE TABLE comments(
-commentID identity(1,1) PRIMARY KEY,
+commentID INT AUTO_INCREMENT PRIMARY KEY,
 comment VARCHAR(255),
-commentDate CURRENT_TIMESTAMP
+commentDate DATATIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE posts(
-postID identity(1,1) PRIMARY KEY,
-postTITLE VARCHAR(255) NOT NULL,
+postid identity(1,1) PRIMARY KEY,
+posttitle VARCHAR(255) NOT NULL,
 category VARCHAR(255),
-postDate DEFAULT CURRENT_TIMESTAMP
+postdate DATATIME DEFAULT CURRENT_TIMESTAMP
 );
 
 
-INSERT INTO user
+INSERT INTO user(username, useremail, age, password)
 VALUES("franko", "franklinezavai@gmail.com", 21, 2530),
       ('james', 'james@gmail.com', 32, 2001),
       ('kelvin', 'kev@gmail.com', 16, 1234);
 
-INSERT INTO comments
-VALUES("its good music"),
-      ('what was that'),
-      ('love the diversity');
+INSERT INTO comments(comment)
+VALUES("nice"),
+      ('happy'),
+      ('great');
 
-INSERT INTO posts
+INSERT INTO posts(posttitle, category)
 VALUES('GREAT WONDERS OF THE WORLD', 'HISTORY'),
       ('THE TIME ON THE EDGE', "FOOTBALL");
 
