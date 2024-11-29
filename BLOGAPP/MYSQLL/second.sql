@@ -57,9 +57,6 @@ VALUES('👌'),
       ('👍'),
       ('share');
 
-
-
-
 DROP TABLE  comments;
 
 DROP DATABASE blogaccess;
@@ -68,3 +65,19 @@ DELETE FROM users
 WHERE name = 'siraj';
 
 DELETE FROM comments;
+
+SELECT * FROM comments
+WHERE comment = 'i love football';
+
+SELECT * FROM users;
+
+SELECT title,category
+FROM posts;
+
+DELETE FROM posts
+WHERE title = 'LONG LIFE'
+
+UPDATE users
+SET name = 'james'
+WHERE userid = 1
+
